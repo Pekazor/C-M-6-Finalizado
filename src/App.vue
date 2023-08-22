@@ -1,8 +1,12 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <nav class="navbar" style="background-color: black;">
+      <span class="mdi mdi-headphones">
+        <router-link to="/"> Game Opinion</router-link> 
+      </span>
+      <span class="mdi mdi-home">
+        <router-link to="/">Home</router-link>
+      </span>
     </nav>
     <router-view/>
   </div>
@@ -18,15 +22,24 @@
 }
 
 nav {
-  padding: 30px;
+  padding: 50px;
 }
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #d8d8d8;
+  margin-left: 5px;
+  margin-right: 10px;
+  text-decoration: none;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: white;
+  
+}
+.mdi{
+  color: white;
+  margin-left: 10px;
+  font-size: 20px;
 }
 </style>
